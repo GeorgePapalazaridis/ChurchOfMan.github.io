@@ -10,9 +10,9 @@ html{
   font-size: 100%;
 }
 
-body {
+/* body {
 
-}
+} */
 
 .img-wrapper {
   display: flex;
@@ -94,7 +94,7 @@ body {
     padding: 2.6rem 1.7rem;
   }
   
-  .social a {
+  .social a:link, .social a:visited {
     font-size: 1.5rem;
   }
 }
@@ -119,7 +119,7 @@ body {
     padding: 2rem 1.6rem;
   }
   
-  .social a {
+ .social a:link, .social a:visited {
     font-size: 1.2rem;
   }
 }
@@ -153,8 +153,8 @@ body {
     padding: 1rem 1.5rem;
   }
   
-  .social a {
-    font-size: 1rem;
+  .social a:link, .social a:visited {
+    font-size: 0.9rem;
   }
 }
 
@@ -185,8 +185,8 @@ body {
     padding: 0.8rem 1.4rem;
   }
   
-  .social a {
-    font-size: 0.9rem;
+  .social a:link, .social a:visited {
+    font-size: 0.7rem;
   }
 }
 
