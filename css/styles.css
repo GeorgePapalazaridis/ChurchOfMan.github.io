@@ -1,9 +1,192 @@
-* {
+/* :root{} */
+
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: aqua;
+html{
+  font-size: 100%;
 }
+
+body {
+
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.logo {
+  margin: 3rem;
+  max-width: 400px;
+}
+
+.logo-txt {
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid aqua;
+  border-radius: 100px;
+  padding: 1rem 2rem;
+}
+
+.logo-txt h1 {
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
+
+.logo-txt p {
+  font-size: 1.5rem;
+  letter-spacing: 15px;
+  font-weight: bold;
+}
+
+.social-media-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+.social {
+  padding: 3rem 1.8rem;
+  /* font-size: 1rem; */
+}
+
+.social a:link, .social a:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: black
+}
+
+.social a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.social a:active {
+  font-size: 3rem;
+  color: black;
+  transition: all 1s ease-in-out;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1367px) {
+  /* Your tablet styles here */
+  .logo {
+    max-width: 350px;
+  }
+
+  .logo-txt h1{
+    font-size: 1.9rem;
+    letter-spacing: 7px;
+  }
+
+  .logo-txt p {
+    font-size: 1rem;
+    letter-spacing: 12px;
+  }
+
+  .social {
+    padding: 2.6rem 1.7rem;
+  }
+  
+  .social a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Your tablet styles here */
+  .logo {
+    max-width: 350px;
+  }
+
+  .logo-txt h1{
+    font-size: 1.75rem;
+    letter-spacing: 6px;
+  }
+
+  .logo-txt p {
+    font-size: 0.9rem;
+    letter-spacing: 10px;
+  }
+
+  .social {
+    padding: 2rem 1.6rem;
+  }
+  
+  .social a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  /* Your phone styles here */
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+  }
+
+  .logo-txt h1{
+    font-size: 1.5rem;
+    letter-spacing: 6px;
+  }
+
+  .logo-txt p {
+    font-size: 0.7rem;
+    letter-spacing: 12px;
+  }
+
+  .social-media-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social {
+    padding: 1rem 1.5rem;
+  }
+  
+  .social a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 413px) {
+  /* Your styles for smaller phone screens here */
+  .logo {
+    max-width: 250px;
+  }
+
+  .logo-txt h1{
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+  }
+
+  .logo-txt p {
+    font-size: 0.4rem;
+    letter-spacing: 6px;
+  }
+
+  .social-media-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social {
+    padding: 0.8rem 1.4rem;
+  }
+  
+  .social a {
+    font-size: 0.9rem;
+  }
+}
+
